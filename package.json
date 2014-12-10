@@ -9,6 +9,8 @@
   "author": "greenify & daviddao",
   "license": "MIT",
   "dependencies": {
-    "backbone-thin": "^1.0.9"
+    "backbone-thin": "^1.0.9",
+    "biojs-vis-msa": "^0.2.27",
+    "tnt.tree": "0.0.6"
   }
 }
