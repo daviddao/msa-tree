@@ -19,7 +19,8 @@ describe("Model", function() {
       // parseInt ? 
       el.id = el.name.split("|")[0];
     });
-    g = new model.childs(seqs);
+    g = new model.nodes(seqs, treeData);
+    console.log(treeData);
   });
   describe("constructing", function() {
     it("constructing", function() {
