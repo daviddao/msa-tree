@@ -10,7 +10,15 @@
   "license": "MIT",
   "dependencies": {
     "backbone-thin": "^1.0.9",
+    "biojs-io-clustal": "0.0.11",
+    "biojs-io-fasta": "0.0.14",
+    "biojs-io-newick": "^1.0.0",
     "biojs-vis-msa": "^0.2.27",
     "tnt.tree": "0.0.6"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.0.1",
+    "underscore": "^1.7.0"
   }
 }
