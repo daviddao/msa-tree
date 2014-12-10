@@ -1,0 +1,14 @@
+{
+  "name": "msa-tnt",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "greenify & daviddao",
+  "license": "MIT",
+  "dependencies": {
+    "backbone-thin": "^1.0.9"
+  }
+}
