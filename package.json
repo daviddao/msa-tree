@@ -4,12 +4,17 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "browser": "mkdirp build && browserify -d -r .:msa-tnt -r biojs-io-fasta -o build/bundle.js",
+    "test": "mocha",
+    "sniper": "npm run sniper",
+    "prepublish": "npm run browser",
+    "watch": "mkdirp build && watchify -d -v -r .:msa-tnt -r biojs-io-fasta -o build/bundle.js"
   },
   "author": "greenify & daviddao",
   "license": "MIT",
   "dependencies": {
     "backbone-thin": "^1.0.9",
+    "backbone-viewj": "^1.0.2",
     "biojs-io-clustal": "0.0.11",
     "biojs-io-fasta": "0.0.14",
     "biojs-io-newick": "^1.0.0",
@@ -17,8 +22,20 @@
     "tnt.tree": "0.0.6"
   },
   "devDependencies": {
+    "biojs-sniper": "^0.1.2",
+    "browserify": "^7.0.0",
     "chai": "^1.10.0",
+    "mkdirp": "^0.5.0",
     "mocha": "^2.0.1",
-    "underscore": "^1.7.0"
+    "underscore": "^1.7.0",
+    "watchify": "^2.1.1"
+  },
+  "sniper": {
+    "js": [
+      "/build/bundle.js"
+    ],
+    "snippets": [
+      "examples"
+    ]
   }
 }
