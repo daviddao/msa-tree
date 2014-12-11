@@ -1,8 +1,8 @@
->1|monkey
+>i1|monkey
 ACGACGAACT
->2|human
+>i2|human
 AGGCAGCTAC
->3|rat
+>i3|rat
 TAGCAGCTAC
->4|mouse
+>i4|mouse
 TGCCTGCACT 
