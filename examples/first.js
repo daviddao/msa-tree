@@ -18,13 +18,11 @@ var msa = require("biojs-vis-msa");
 var sel = new selections();
 
 combi.utils.xhr(["../test/dummy/dummy_msa.fasta", "../test/dummy/dummy_newick.newick"]).then(function(result) {
-  var seqs = fasta.parse(result[0]);
 
-  var n = newick(result[1]);
-  console.log(n);
-
-  var nodes = new model.nodes(seqs);
-  console.log(nodes);
+  var nodes = combi.app({
+    seqs: fasta.parse(result[0]),
+    tree: newick(result[1])
+  });
 
   var m = new adapters.msa({
     model: nodes,
@@ -37,7 +35,7 @@ combi.utils.xhr(["../test/dummy/dummy_msa.fasta", "../test/dummy/dummy_newick.ne
   m.render();
 
   var t = new adapters.tree({
-    tree: n,
+    model: nodes,
     el: treeDiv
   });
 
