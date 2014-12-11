@@ -1,7 +1,7 @@
 {
   "name": "msa-tnt",
   "version": "0.1.0",
-  "description": "",
+  "description": "A collection of adapters to combine the MSA and Tree component",
   "main": "lib/index.js",
   "scripts": {
     "browser": "mkdirp build && browserify -d -r .:msa-tnt -r biojs-io-fasta -r biojs-vis-msa -r biojs-io-newick -o build/bundle.js",
@@ -10,6 +10,10 @@
     "sniper": "npm run sniper",
     "prepublish": "npm run browser",
     "watch": "mkdirp build && watchify -d -v -r .:msa-tnt -r biojs-io-fasta -r biojs-vis-msa -r biojs-io-newick -o build/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daviddao/msa-tree"
   },
   "author": "greenify & daviddao",
   "license": "MIT",
