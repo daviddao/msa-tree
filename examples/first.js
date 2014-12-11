@@ -36,7 +36,8 @@ combi.utils.xhr(["../test/dummy/dummy_msa.fasta", "../test/dummy/dummy_newick.ne
 
   var t = new adapters.tree({
     model: nodes,
-    el: treeDiv
+    el: treeDiv,
+    sel: sel,
   });
 
   var menu = new msa.menu.defaultmenu({
