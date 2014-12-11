@@ -4,12 +4,12 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "browser": "mkdirp build && browserify -d -r .:msa-tnt -r biojs-io-fasta -r biojs-vis-msa -o build/bundle.js",
+    "browser": "mkdirp build && browserify -d -r .:msa-tnt -r biojs-io-fasta -r biojs-vis-msa -r biojs-io-newick -o build/bundle.js",
     "test": "mocha",
     "css": "parcelify lib/index.js -c build/bundle.css",
     "sniper": "npm run sniper",
     "prepublish": "npm run browser",
-    "watch": "mkdirp build && watchify -d -v -r .:msa-tnt -r biojs-io-fasta -r biojs-vis-msa -o build/bundle.js"
+    "watch": "mkdirp build && watchify -d -v -r .:msa-tnt -r biojs-io-fasta -r biojs-vis-msa -r biojs-io-newick -o build/bundle.js"
   },
   "author": "greenify & daviddao",
   "license": "MIT",
@@ -20,7 +20,9 @@
     "biojs-io-fasta": "0.0.14",
     "biojs-io-newick": "^1.0.0",
     "biojs-vis-msa": "^0.2.28",
-    "tnt.tree": "0.0.6"
+    "kew": "^0.5.0-alpha.1",
+    "tnt.tree": "0.0.6",
+    "xhr": "^1.17.0"
   },
   "devDependencies": {
     "biojs-sniper": "^0.1.2",
