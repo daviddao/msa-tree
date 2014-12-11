@@ -20,6 +20,7 @@
     "biojs-io-fasta": "0.0.14",
     "biojs-io-newick": "^1.0.0",
     "biojs-vis-msa": "^0.2.28",
+    "d3": "^3.5.2",
     "kew": "^0.5.0-alpha.1",
     "tnt.tree": "0.0.6",
     "xhr": "^1.17.0"
