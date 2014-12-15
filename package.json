@@ -1,6 +1,6 @@
 {
   "name": "msa-tnt",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A collection of adapters to combine the MSA and Tree component",
   "main": "lib/index.js",
   "scripts": {
@@ -50,6 +50,9 @@
     ],
     "css": [
       "/build/bundle.css"
+    ],
+    "buildCSS": [
+      "/dist/bundle.css"
     ],
     "snippets": [
       "examples"
