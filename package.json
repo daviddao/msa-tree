@@ -1,6 +1,6 @@
 {
   "name": "msa-tnt",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "A collection of adapters to combine the MSA and Tree component",
   "main": "lib/index.js",
   "scripts": {
@@ -26,6 +26,7 @@
     "biojs-vis-msa": "^0.2.28",
     "d3": "^3.5.2",
     "kew": "^0.5.0-alpha.1",
+    "underscore": "^1.7.0",
     "tnt.tree": "0.0.9",
     "xhr": "^1.17.0"
   },
@@ -36,10 +37,13 @@
     "mkdirp": "^0.5.0",
     "mocha": "^2.0.1",
     "parcelify": "^0.12.3",
-    "underscore": "^1.7.0",
     "watchify": "^2.1.1"
   },
-  "keywords": ["msa", "tnt", "biojs"],
+  "keywords": [
+    "msa",
+    "tnt",
+    "biojs"
+  ],
   "sniper": {
     "js": [
       "/build/bundle.js"
@@ -49,6 +53,11 @@
     ],
     "snippets": [
       "examples"
+    ],
+    "exposed": [
+      "biojs-io-fasta",
+      "biojs-io-newick",
+      "biojs-vis-msa"
     ]
   }
 }
