@@ -20,14 +20,14 @@
   "dependencies": {
     "backbone-thin": "^1.0.9",
     "backbone-viewj": "^1.0.2",
-    "biojs-io-clustal": "^0.0.11",
-    "biojs-io-fasta": "^0.0.14",
+    "biojs-io-clustal": "0.0.16",
+    "biojs-io-fasta": "^0.1.7",
     "biojs-io-newick": "^1.0.0",
-    "biojs-vis-msa": "^0.2.28",
+    "biojs-vis-msa": "^0.3.10",
     "d3": "^3.5.2",
     "kew": "^0.5.0-alpha.1",
-    "underscore": "^1.7.0",
     "tnt.tree": "0.0.9",
+    "underscore": "^1.7.0",
     "xhr": "^1.17.0"
   },
   "devDependencies": {

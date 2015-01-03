@@ -11,7 +11,7 @@ var combi = require("msa-tnt");
 var model = combi.model;
 var adapters = combi.adapters;
 var selections = combi.selections;
-var fasta = require("biojs-io-fasta").parse;
+var fasta = require("biojs-io-fasta");
 var newick = require("biojs-io-newick").parse_newick;
 var msa = require("biojs-vis-msa");
 
