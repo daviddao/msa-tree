@@ -32,6 +32,7 @@ combi.utils.xhr(["../test/dummy/dummy_msa.fasta", "../test/dummy/dummy_newick.ne
       scheme: "clustal"
     }
   });
+  m.msa.g.zoomer.set("alignmentHeight", 60);
   m.render();
 
   var t = new adapters.tree({
