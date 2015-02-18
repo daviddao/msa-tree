@@ -1,15 +1,15 @@
 {
   "name": "msa-tnt",
-  "version": "0.1.10",
+  "version": "0.1.15",
   "description": "A collection of adapters to combine the MSA and Tree component",
   "main": "lib/index.js",
   "scripts": {
-    "browser": "mkdirp build && browserify -d -r .:msa-tnt -r biojs-io-fasta -r biojs-vis-msa -r biojs-io-newick -o build/bundle.js",
+    "browser": "mkdirp build && browserify -d -r .:msa-tnt -r biojs-io-fasta -r msa -r biojs-io-newick -o build/bundle.js",
     "test": "mocha",
     "css": "parcelify lib/index.js -c build/bundle.css",
     "sniper": "npm run sniper",
     "prepublish": "npm run browser",
-    "watch": "mkdirp build && watchify -d -v -r .:msa-tnt -r biojs-io-fasta -r biojs-vis-msa -r biojs-io-newick -o build/bundle.js"
+    "watch": "mkdirp build && watchify -d -v -r .:msa-tnt -r biojs-io-fasta -r msa -r biojs-io-newick -o build/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -20,23 +20,23 @@
   "dependencies": {
     "backbone-thin": "^1.0.9",
     "backbone-viewj": "^1.0.2",
-    "biojs-io-clustal": "0.0.16",
-    "biojs-io-fasta": "^0.1.7",
+    "biojs-io-clustal": "0.x",
+    "biojs-io-fasta": "^0.x",
     "biojs-io-newick": "^1.0.0",
-    "biojs-vis-msa": "^0.3.10",
     "d3": "^3.5.2",
     "kew": "^0.5.0-alpha.1",
+    "msa": "^0.3.25",
     "tnt.tree": "0.0.12",
     "underscore": "^1.7.0",
     "xhr": "^1.17.0"
   },
   "devDependencies": {
-    "biojs-sniper": "^0.1.2",
     "browserify": "^7.0.0",
     "chai": "^1.10.0",
     "mkdirp": "^0.5.0",
     "mocha": "^2.0.1",
     "parcelify": "^0.12.3",
+    "sniper": "^0.2.15",
     "watchify": "^2.1.1"
   },
   "keywords": [
