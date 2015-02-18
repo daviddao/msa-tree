@@ -1,6 +1,6 @@
 {
   "name": "msa-tnt",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "description": "A collection of adapters to combine the MSA and Tree component",
   "main": "lib/index.js",
   "scripts": {
@@ -60,7 +60,7 @@
     "exposed": [
       "biojs-io-fasta",
       "biojs-io-newick",
-      "biojs-vis-msa"
+      "msa"
     ]
   }
 }
