@@ -17,7 +17,7 @@ var msa = require("msa");
 
 var sel = new selections();
 
-combi.utils.xhr(["../test/dummy/dummy_msa.fasta", "../test/dummy/dummy_newick.newick"]).then(function(result) {
+combi.utils.xhr(["../test/dummy/edu_msa.fasta", "../test/dummy/edu_newick.newick"]).then(function(result) {
 
   var nodes = combi.app({
     seqs: fasta.parse(result[0]),
@@ -29,10 +29,10 @@ combi.utils.xhr(["../test/dummy/dummy_msa.fasta", "../test/dummy/dummy_newick.ne
     el: msaDiv,
     sel: sel,
     colorscheme: {
-      scheme: "clustal"
+      scheme: "zappo"
     }
   });
-  m.msa.g.zoomer.set("alignmentHeight", 60);
+  m.msa.g.zoomer.set("alignmentHeight", 100);
   m.render();
 
   var t = new adapters.tree({
