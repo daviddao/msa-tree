@@ -1,6 +1,6 @@
 {
   "name": "msa-tnt",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "A collection of adapters to combine the MSA and Tree component",
   "main": "lib/index.js",
   "scripts": {
@@ -25,7 +25,7 @@
     "biojs-io-newick": "^1.0.0",
     "d3": "^3.5.2",
     "kew": "^0.5.0-alpha.1",
-    "msa": "^0.3.28",
+    "msa": "^0.3.34",
     "tnt.tree": "0.0.12",
     "underscore": "^1.7.0",
     "xhr": "^1.17.0"
