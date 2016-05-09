@@ -11,7 +11,7 @@ var combi = require("msa-tnt");
 var model = combi.model;
 var adapters = combi.adapters;
 var selections = combi.selections;
-var fasta = require("biojs-io-fasta");
+var fasta = require("biojs-io-fasta").parse;
 var newick = require("biojs-io-newick").parse_newick;
 var msa = require("msa");
 
@@ -19,11 +19,14 @@ var sel = new selections();
 
 combi.utils.xhr(["../test/dummy/dummy_msa.fasta", "../test/dummy/dummy_newick.newick"]).then(function(result) {
 
-  var nodes = combi.app({
-    seqs: fasta.parse(result[0]),
-    tree: newick(result[1])
-  });
+  var seqs = fasta(result[0]);
+  var tree = newick(result[1]);
 
+  var nodes = combi.app({
+    seqs: seqs,
+    tree: tree,
+  });
+  
   var m = new adapters.msa({
     model: nodes,
     el: msaDiv,
