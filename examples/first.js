@@ -17,7 +17,7 @@ var msa = require("msa");
 
 var sel = new selections();
 
-combi.utils.xhr(["../test/dummy/dummy_msa.fasta", "../test/dummy/dummy_newick.newick"]).then(function(result) {
+combi.utils.xhr(["../test/dummy/dummy_msa.fasta", "../test/dummy/dummy_newick.newick"]).done(function(result) {
 
   var seqs = fasta(result[0]);
   var tree = newick(result[1]);
@@ -26,7 +26,7 @@ combi.utils.xhr(["../test/dummy/dummy_msa.fasta", "../test/dummy/dummy_newick.ne
     seqs: seqs,
     tree: tree,
   });
-  
+
   var m = new adapters.msa({
     model: nodes,
     el: msaDiv,
