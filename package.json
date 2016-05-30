@@ -7,7 +7,7 @@
     "browser": "mkdirp build && browserify -d -r .:msa-tnt -r biojs-io-fasta -r msa -r biojs-io-newick -o build/bundle.js",
     "test": "mocha",
     "css": "parcelify lib/index.js -c build/bundle.css",
-    "sniper": "npm run sniper",
+    "sniper": "./node_modules/sniper/bin/sniper .",
     "prepublish": "npm run browser",
     "watch": "mkdirp build && watchify -d -v -r .:msa-tnt -r biojs-io-fasta -r msa -r biojs-io-newick -o build/bundle.js"
   },
@@ -20,24 +20,24 @@
   "dependencies": {
     "backbone-thin": "^1.0.9",
     "backbone-viewj": "^1.0.2",
-    "biojs-io-clustal": "0.x",
-    "biojs-io-fasta": "^0.x",
-    "biojs-io-newick": "^1.0.0",
-    "d3": "^3.5.2",
-    "kew": "^0.5.0-alpha.1",
-    "msa": "^0.4.14",
-    "tnt.tree": "0.0.12",
-    "underscore": "^1.7.0",
-    "xhr": "^1.17.0"
+    "biojs-io-clustal": "0.0.21",
+    "biojs-io-fasta": "^0.1.17",
+    "biojs-io-newick": "^1.5.0",
+    "d3": "^3.5.17",
+    "kew": "^0.7.0",
+    "msa": "^0.4.23",
+    "tnt.tree": "0.1.4",
+    "underscore": "^1.8.3",
+    "xhr": "^2.2.0"
   },
   "devDependencies": {
-    "browserify": "^7.0.0",
-    "chai": "^1.10.0",
-    "mkdirp": "^0.5.0",
-    "mocha": "^2.0.1",
-    "parcelify": "^0.12.3",
-    "sniper": "^0.2.15",
-    "watchify": "^2.1.1"
+    "browserify": "^13.0.1",
+    "chai": "^3.5.0",
+    "mkdirp": "^0.5.1",
+    "mocha": "^2.5.3",
+    "parcelify": "^2.1.0",
+    "sniper": "^0.2.17",
+    "watchify": "^3.7.0"
   },
   "keywords": [
     "msa",
